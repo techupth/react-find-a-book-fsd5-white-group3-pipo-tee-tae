@@ -7,7 +7,7 @@ function App() {
   const [data, getData] = useState([]);
 
   async function getTextData() {
-    if (text.trim() == "") {
+    if (text == "") {
       getData([]);
     } else {
       const result = await axios.get(
