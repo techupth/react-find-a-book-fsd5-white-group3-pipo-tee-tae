@@ -8,7 +8,7 @@ function App() {
 
   async function getTextData() {
     if (text == "") {
-      getData([]);
+      getData("");
     } else {
       const result = await axios.get(
         `https://www.googleapis.com/books/v1/volumes?q=${text}`
